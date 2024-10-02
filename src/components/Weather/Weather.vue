@@ -47,7 +47,7 @@ async function getLocationWeather(e: any) {
   const appID = import.meta.env.VITE_APP_ID
 
   // Construct the request URL for weather data
-  const weatherRequestUrl = `${apiBaseUrl}/data/2.5/weather?q=${locationInput}&appid=${appID}`
+  const weatherRequestUrl = `${apiBaseUrl}/data/2.5/weather?q=${locationInput}&units=metric&appid=${appID}`
 
   // Define the request options
   const weatherRequestOptions: RequestCustom = {
